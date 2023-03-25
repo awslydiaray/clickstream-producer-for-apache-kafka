@@ -13,17 +13,22 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
 
 class Events {
+
     static final private String[] deviceType = {"mobile","computer", "tablet"};
+
 //     static final private String[] productCatalogOptions = {"home_page", "product_detail"};
-    static final private String[] productCatalogOptions = {"home_page", "room_detail"};
-    static final private String[] productTypeOptions = {"cell phones", "laptops", "ear phones", "soundbars", "cd players", "AirPods", "video games", "cameras"};
+//     static final private String[] productTypeOptions = {"cell phones", "laptops", "ear phones", "soundbars", "cd players", "AirPods", "video games", "cameras"};
 //     static final private String[] productDetailOptions = {"product_catalog", "add_to_cart"};
-    static final private String[] productDetailOptions = {"room_option", "reserve_room"};
 //     static final private String[] addToCartOptions = {"product_catalog", "remove_from_cart", "order"};
-    static final private String[] addToCartOptions = {"room_option", "unreserve_room", "confirm_booking"};
 //     static final private String[] orderOptions = {"order_checkout", "remove_from_cart", "product_catalog"};
-    static final private String[] orderOptions = {"complete_booking", "unreserve_room", "room_option"};
 //     static final private String[] removeFromCartOptions = {"", "product_detail", "product_catalog"};
+//     static final private String[] productCatalogOptions = {"home_page", "product_detail"};
+   
+    static final private String[] productCatalogOptions = {"home_page", "room_detail"};
+    static final private String[] productTypeOptions = {"single_queen_room", "single_king_room", "twin_queen_room", "twin_king_room", "junior_suite", "queen_suite", "king_suite", "president_suite"};
+    static final private String[] productDetailOptions = {"room_option", "reserve_room"};
+    static final private String[] addToCartOptions = {"room_option", "unreserve_room", "confirm_booking"};
+    static final private String[] orderOptions = {"complete_booking", "unreserve_room", "room_option"};
     static final private String[] removeFromCartOptions = {"home_page", "room_detail", "room_option"};
     private Random rand = new Random();
     private final static AtomicLong totalEvents = new AtomicLong(0L);
